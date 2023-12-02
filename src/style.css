@@ -1,0 +1,213 @@
+@import url('https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap');
+
+body {
+    border-radius: 50px;
+    background: #f8f7f7;
+
+
+
+}
+
+.fadeOut {
+    opacity: 0;
+    pointer-events: none;
+}
+
+.fadeIn {
+    opacity: 1;
+    pointer-events: all;
+}
+
+.choiceBtn {
+    line-height: 30px;
+    color: blue;
+    background-color: rgb(247, 246, 246);
+    margin-top: 2%;
+    border-color: aliceblue;
+}
+
+header {
+    color: white;
+    font-family: DynaPuff, sans-serif;
+    justify-content: center;
+    align-items: center;
+    margin-left: 45%;
+}
+
+#gameDiv {
+    font-family: "Times New Roman", Times, serif;
+    border: 3px solid;
+    border-radius: 25px;
+    padding: 10px;
+    text-align: center;
+    width: 60vh;
+    height: 60vh;
+    transition: all 0.2s ease 0s;
+    justify-content: center;
+    align-items: center;
+}
+
+.player-template {
+    background-color: red;
+    width: 19vh;
+    height: 6vh;
+    margin-left: 1vh;
+    margin-top: 0.5vh;
+}
+
+.player-one {
+    color: yellow;
+}
+
+.player-score {
+    background-color:
+        blue;
+}
+
+.game {
+    width: 80vh;
+    height: 80vh;
+    border: 3px solid transparent;
+    justify-content: center;
+    margin-top: 10vh;
+    margin-left: 40vh;
+    border-radius: 50px;
+    background: #f3efef;
+    box-shadow: 20px 20px 60px #d0d0d0,
+        -20px -20px 60px #ffffff;
+}
+
+.game-intro {
+    background: rgb(6, 6, 33);
+    border-color: red;
+    height: 0vh;
+    width: 10vh;
+    margin-top: 10vh;
+    margin-left: 50vh;
+    border-radius: 1vh;
+    transition: all 0.2s ease 0s;
+}
+
+.EndgameBtn {
+    margin-top: 57vh;
+    margin-left: 42vh;
+}
+
+.h1 {
+    color: blue;
+    margin-left: 41vh;
+    margin-top: 6vh;
+}
+
+.game-button {
+    min-width: 6rem;
+    height: 3rem;
+    box-shadow: 20px 20px 60px #d0d0d0,
+        -20px -20px 60px #ffffff;
+    display: inline-block;
+    border-radius: 14px;
+    justify-content: center;
+    margin-top: 24vh;
+    margin-left: 35vh;
+    animation: 5s ease 0s 1 normal none running colors;
+    cursor: pointer;
+}
+
+
+#rock {
+    width: 17rem;
+    height: 3rem;
+    margin-top: 8vh;
+    margin-left: -23vh;
+}
+
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    width: 2vh;
+    height: 2%;
+
+}
+
+#Rock-Img {
+    border-radius: 10px;
+    width: 17vh;
+    height: 15vh;
+    margin-left: 50vh;
+    display: inline;
+}
+
+#Paper-Img {
+    border-radius: 10px;
+    width: 17vh;
+    height: 15vh;
+    margin-left: 70vh;
+    background: transparent;
+}
+
+#Scissors-Img {
+    border-radius: 10px;
+    width: 17vh;
+    height: 15vh;
+    margin-left: 89vh;
+
+}
+
+.container div {
+    width: 10%;
+    height: 10%;
+}
+
+.paper-intro-text {
+    font-size: 60px;
+    animation: 5s ease 0s 1 normal none running myRockanimation;
+}
+
+.Animation-text-container {
+    margin-left: -20vh;
+    margin-top: 30vh;
+    font-size: 40px;
+}
+
+#Text {
+    justify-content: center;
+    margin-top: -70vh;
+    margin-left: 72vh;
+    color: rgb(24, 34, 223);
+}
+
+#resultText {
+    margin-left: 5vh;
+}
+
+.player-one {
+    position: fixed;
+    background: gray;
+    margin-left: -40vh;
+    font-size: 30px;
+}
+
+.container {
+    opacity: 1;
+}
+
+.choiceBtn {
+
+
+    margin-left: 12vh;
+    background: #f5f5f5;
+    box-shadow: 20px 20px 60px #d0d0d0,
+        -20px;
+
+}
+
+.gif-container {
+    width: 0vh;
+    background: #f5f5f5;
+    box-shadow: 20px 20px 60px #d0d0d0,
+        -20px;
+
+    display: flex;
+    margin-left: 44vh;
+    margin-top: 6vh;
+}
