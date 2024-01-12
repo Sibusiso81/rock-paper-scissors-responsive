@@ -1,0 +1,50 @@
+body{
+    font-family: 'Montserrat', Times, serif;
+   
+}
+
+/* .figure-img{
+    height: 150px;
+    object-fit: cover;
+    margin: 50px auto 15px auto ;
+    
+}
+
+.buttons-row {
+    margin:25px auto;
+}
+
+button{
+    width:100%;
+    
+    
+    
+}
+.Score{
+    font-family: 'Bebas Neue',sans-serif;
+    font-weight: 200;
+    font-size: 40px;
+}
+
+ */
+ .buttons-sm{
+    margin:0 auto;
+ }
+ img{
+    height: 200px;
+    width: 200px;
+    margin:auto 20%;
+ }
+ .custom-container-sm{
+    margin:0 auto;
+ }
+
+
+@media (min-width: 768px) and (max-width: 1199.98px) { 
+    .custom-container-sm{
+        margin: 15% auto;
+    }
+    .buttons-sm{
+        margin: auto 5%;
+    }
+}
