@@ -1,0 +1,25 @@
+
+ img{
+    height: 200px;
+    width: 200px;
+    margin:auto 20%;
+ }
+ .custom-container-sm{
+    margin:0 auto;
+ }
+
+
+@media (min-width: 768px) { 
+    .custom-container-sm{
+        margin: 5% auto;
+    }
+    .buttons-sm{
+        margin: auto 5%;
+    }
+    img{
+        height: 200px;
+        width: 200px;
+        margin:auto 20%;
+     }
+  
+}

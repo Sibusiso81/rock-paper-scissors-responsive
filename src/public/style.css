@@ -33,18 +33,33 @@ button{
  img{
     height: 200px;
     width: 200px;
-    margin:auto 20%;
+    margin:auto ;
  }
  .custom-container-sm{
     margin:0 auto;
  }
+ 
 
 
-@media (min-width: 768px) and (max-width: 1199.98px) { 
+@media (min-width: 768px) { 
     .custom-container-sm{
         margin: 15% auto;
     }
     .buttons-sm{
         margin: auto 5%;
     }
+    img{
+        height: 200px;
+        width: 200px;
+        margin:auto ;
+     }
+    /*  .custom-buttons-row{
+        margin-left: 33.33333333%;
+     }
+     .custom-buttons-col{
+        
+            flex: 0 0 auto;
+            width: 16.66666667%;
+        
+     } */
 }

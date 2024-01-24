@@ -12,12 +12,12 @@ endResult();
 /* Return to game */
 playAgain.addEventListener('click', function goToIndex(){
     clearLocalStorage()
-    window.location.assign('/src/game.html');
+    window.location.assign('/src/pages/game.html');
 }); 
 /* Return to index */
 quitBtn.addEventListener('click', function goToIndex(){
     clearLocalStorage()
-    window.location.assign('/src/index.html');
+    window.location.assign('/src/pages/index.html');
 }); 
 /* Generate end result and display  */
 function endResult(){
