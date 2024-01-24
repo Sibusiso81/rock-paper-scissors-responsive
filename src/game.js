@@ -140,7 +140,7 @@ function saveToLocalStorage(computerMove) {
     }
 
     localStorage.setItem("highscores", JSON.stringify(highscores));
-    window.location.assign("/src/pages/scoreboard.html");
+    window.location.assign("/src/scoreboard.html");
   }
   /* Execute function on click event */
   saveBtn.addEventListener("click", function saveScores() {
