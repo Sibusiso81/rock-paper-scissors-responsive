@@ -22,9 +22,9 @@ const highscores = JSON.parse(localStorage.getItem("highscores")) || [];
 
 /* Store Move Images */
 const moveImages = {
-  rock: "/src/assets/idle-rock_orig.gif",
-  paper: "/src/assets/idle-paper_image.gif",
-  scissors: "/src/assets/idle-scissors_orig.gif",
+  rock: "assets/idle-rock_orig.gif",
+  paper: "assets/idle-paper_image.gif",
+  scissors: "assets/idle-scissors_orig.gif",
 };
 
 //Get player move
@@ -34,13 +34,13 @@ choiceBtns.forEach((button) =>
 
     if (player === "Rock") {
       rock();
-      playerMoveImage.src = "/src/assets/idle-rock_orig.gif";
+      playerMoveImage.src = "assets/idle-rock_orig.gif";
     } else if (player === "Paper") {
       paper();
-      playerMoveImage.src = "/src/assets/idle-paper_image.gif";
+      playerMoveImage.src = "assets/idle-paper_image.gif";
     } else if (player === "Scissors") {
       scissors();
-      playerMoveImage.src = "/src/assets/idle-scissors_orig.gif";
+      playerMoveImage.src = "assets/idle-scissors_orig.gif";
     }
     getComputersMove();
   })
@@ -53,11 +53,11 @@ function getComputersMove() {
   const computerMove = moves[moveNumber];
   console.log(computerMove);
   if (moveNumber === 0) {
-    computerMoveImage.src = "/src/assets/idle-rock_orig.gif";
+    computerMoveImage.src = "assets/idle-rock_orig.gif";
   } else if (moveNumber === 1) {
-    computerMoveImage.src = "/src/assets/idle-paper_image.gif";
+    computerMoveImage.src = "assets/idle-paper_image.gif";
   } else {
-    computerMoveImage.src = "/src/assets/idle-scissors_orig.gif";
+    computerMoveImage.src = "assets/idle-scissors_orig.gif";
   }
   /* Passing Arguments for game functions */
   rock(computerMove);
@@ -140,7 +140,7 @@ function saveToLocalStorage(computerMove) {
     }
 
     localStorage.setItem("highscores", JSON.stringify(highscores));
-    window.location.assign("/src/scoreboard.html");
+    window.location.assign("scoreboard.html");
   }
   /* Execute function on click event */
   saveBtn.addEventListener("click", function saveScores() {

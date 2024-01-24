@@ -12,12 +12,12 @@ endResult();
 /* Return to game */
 playAgain.addEventListener('click', function goToIndex(){
     clearLocalStorage()
-    window.location.assign('/src/game.html');
+    window.location.assign('game.html');
 }); 
 /* Return to index */
 quitBtn.addEventListener('click', function goToIndex(){
     clearLocalStorage()
-    window.location.assign('/src/index.html');
+    window.location.assign('index.html');
 }); 
 /* Generate end result and display  */
 function endResult(){
@@ -42,20 +42,20 @@ function endResult(){
 /* Get appropriate image to display based on result */
 function computerWon(){
     if(playerinfoIndex.figCaptionOne === 'Rock'){
-        FinalResultImage .src = '/src/assets/dying-rock_orig.gif'
+        FinalResultImage .src = 'assets/dying-rock_orig.gif'
     }else if(playerinfoIndex.figCaptionOne === 'Paper'){
-        FinalResultImage .src = '/src/assets/dying-paper_orig.gif'
+        FinalResultImage .src = 'assets/dying-paper_orig.gif'
     }else if(playerinfoIndex.figCaptionOne === 'Scissors'){
-        FinalResultImage .src ='/src/assets/dying-scissors_orig.gif'
+        FinalResultImage .src ='assets/dying-scissors_orig.gif'
     }
 }
 function playerwWon(){
     if(playerinfoIndex.figCaptionOne === 'Rock'){
-        FinalResultImage .src = '/src/assets/dying-scissors_orig.gif'
+        FinalResultImage .src = 'assets/dying-scissors_orig.gif'
     }else if(playerinfoIndex.figCaptionOne === 'Paper'){
-        FinalResultImage .src = '/src/assets/dying-rock_orig.gif'
+        FinalResultImage .src = 'assets/dying-rock_orig.gif'
     }else if(playerinfoIndex.figCaptionOne === 'Scissors'){
-        FinalResultImage .src ='/src/assets/dying-paper_orig.gif'
+        FinalResultImage .src ='assets/dying-paper_orig.gif'
     }
 }
 /* Clear local storage so latest results are generated */
