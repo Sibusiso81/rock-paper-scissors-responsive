@@ -53,6 +53,9 @@ button{
         width: 200px;
         margin:auto ;
      }
+     .w-50{
+        width: 25%;
+     }
     /*  .custom-buttons-row{
         margin-left: 33.33333333%;
      }
