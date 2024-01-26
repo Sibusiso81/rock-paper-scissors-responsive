@@ -7,5 +7,5 @@ const gaemIntro = document.querySelector('.game-intro');
   playBtn.addEventListener('click',function getPlayerName(){
   let playerName = playerNameTextInput.value;
   localStorage.setItem('playerNameValue', playerName);
- window.location.assign('/game.html');
+ window.location.assign('game.html');
 });

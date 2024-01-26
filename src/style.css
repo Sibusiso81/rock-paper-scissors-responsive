@@ -2,6 +2,17 @@ body{
     font-family: 'Montserrat', Times, serif;
    
 }
+.custom-alert{
+   margin: 0 auto;
+  width: 70%;
+  transform: translateY(-150%);
+  transition: ease-out 0.2s;
+  }
+  .showalert{
+   transform: translateY(10%);
+   transition:ease-in 0.2s;
+  }
+
 
  .buttons-sm{
     margin:0 auto;
@@ -32,5 +43,9 @@ body{
      .w-50{
         width: 25% !important;
      }
-  
+     .custom-alert{
+      width: 30%;
+    
+     }
+    
 }

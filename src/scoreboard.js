@@ -25,13 +25,13 @@ function endResult(){
         playersName.innerHTML = `Wow  ${playerinfoIndex .playerName}  You lost.`;
         finalScore.innerHTML = `${playerinfoIndex.playerScore}/${playerinfoIndex.computerScore}`;
         finalResultText.innerHTML = 'You really lost to an inanimate object.';
-        computerWon()
+       
     }
     else if(playerinfoIndex.playerScore > playerinfoIndex.computerScore && playerinfo.length>1){
         playersName.innerHTML = `${playerinfoIndex .playerName}  You Won!.`;
         finalScore.innerHTML = `${playerinfoIndex.playerScore}/${playerinfoIndex.computerScore}`;
         finalResultText.innerHTML = `What's an inanimate object against the pinicle of the human race ..NOTHING!`;
-        playerwWon()
+      
     }else{
         playersName.innerHTML = `${playerinfoIndex .playerName}  You Drew!.`;
         finalScore.innerHTML = `${playerinfoIndex.playerScore}/${playerinfoIndex.computerScore}`;
@@ -39,25 +39,7 @@ function endResult(){
     }
     
 }
-/* Get appropriate image to display based on result */
-function computerWon(){
-    if(playerinfoIndex.figCaptionOne === 'Rock'){
-        FinalResultImage .src = 'assets/dying-rock_orig.gif'
-    }else if(playerinfoIndex.figCaptionOne === 'Paper'){
-        FinalResultImage .src = 'assets/dying-paper_orig.gif'
-    }else if(playerinfoIndex.figCaptionOne === 'Scissors'){
-        FinalResultImage .src ='assets/dying-scissors_orig.gif'
-    }
-}
-function playerwWon(){
-    if(playerinfoIndex.figCaptionOne === 'Rock'){
-        FinalResultImage .src = 'assets/dying-scissors_orig.gif'
-    }else if(playerinfoIndex.figCaptionOne === 'Paper'){
-        FinalResultImage .src = 'assets/dying-rock_orig.gif'
-    }else if(playerinfoIndex.figCaptionOne === 'Scissors'){
-        FinalResultImage .src ='assets/dying-paper_orig.gif'
-    }
-}
+
 /* Clear local storage so latest results are generated */
  function clearLocalStorage(){
     playerinfo = []
