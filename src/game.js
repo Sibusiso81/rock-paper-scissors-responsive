@@ -23,7 +23,7 @@ function showAlert(){
 
   setTimeout(()=>{
     alert.classList.remove('showalert')
-  },2000)
+  },3000)
 }
 window.onload =showAlert()
 let playerScore = 0;
