@@ -130,7 +130,7 @@ function paper(computerMove) {
     playerScore += 1;
   } else if (player === "Paper" && computerMove === "Scissors") {
     result = "You Lose!";
-    alertText.innerHTML = `ComputerWins!`
+    alertText.innerHTML = `Computer Wins!`
     alertImg.src = 'assets/dying-paper_orig.gif'
     showAlert()
     console.log(result);
