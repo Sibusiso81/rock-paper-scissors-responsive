@@ -47,6 +47,47 @@
             "Error accessing webcam. Please ensure you have granted permission."
           );
         });
+      function detectSmile() {
+        const canvas = document.createElement("canvas");
+        const context = canvas.getContext("2d");
+        let width, height;
+
+        // Check for the video dimensions
+        function updateCanvasSize() {
+          width = video.videoWidth;
+          height = video.videoHeight;
+          canvas.width = width;
+          canvas.height = height;
+        }
+
+        // Update canvas size when video metadata is loaded
+        video.addEventListener("loadedmetadata", updateCanvasSize);
+
+        function checkSmile() {
+          if (video.videoWidth > 0 && video.videoHeight > 0) {
+            context.drawImage(video, 0, 0, width, height);
+            const imageData = canvas.toDataURL("image/jpeg");
+
+            fetch("/detect_smile", {
+              method: "POST",
+              headers: { "Content-Type": "application/json" },
+              body: JSON.stringify({ image: imageData }),
+            })
+              .then((response) => response.json())
+              .then((data) => {
+                if (data.smiling) {
+                  notification.style.display = "block";
+                  setTimeout(() => (notification.style.display = "none"), 2000);
+                }
+              })
+              .catch((err) => console.error("Error detecting smile:", err));
+
+            setTimeout(checkSmile, 1000);
+          }
+        }
+
+        checkSmile();
+      }
     </script>
     <!-- Intro section -->
     <!--  <div class="container custom-container-sm">
