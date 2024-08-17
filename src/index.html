@@ -18,6 +18,34 @@
       crossorigin="anonymous"
     />
     <link rel="stylesheet" href="style.css" />
+    <style>
+      #video {
+        width: 100%;
+        height: auto;
+        border: 1px solid #ddd;
+      }
+
+      #notification {
+        display: none;
+        background: #4caf50;
+        color: white;
+        padding: 15px;
+        border-radius: 5px;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+      }
+
+      /* Media query for mobile devices */
+      @media only screen and (max-width: 600px) {
+        #notification {
+          bottom: 10px;
+          right: 10px;
+          padding: 10px;
+          font-size: 14px;
+        }
+      }
+    </style>
   </head>
   <body
     style="
@@ -38,7 +66,7 @@
         .getUserMedia({ video: true })
         .then((stream) => {
           video.srcObject = stream;
-          /* video.play(); */
+          video.play();
           detectSmile();
         })
         .catch((err) => {
